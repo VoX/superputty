@@ -291,8 +291,8 @@ namespace SuperPutty
         {
             string str = String.Format("{0}?SessionId={1}&TabName={2}", 
                 this.GetType().FullName, 
-                HttpUtility.UrlEncodeUnicode(this.m_Session.SessionId), 
-                HttpUtility.UrlEncodeUnicode(this.TextOverride));
+                HttpUtility.UrlEncode(this.m_Session.SessionId), 
+                HttpUtility.UrlEncode(this.TextOverride));
             return str;
         }
 

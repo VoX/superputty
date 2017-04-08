@@ -187,7 +187,7 @@ namespace SuperPutty
 
         private void TsCommandHistory_ListChanged(object sender, ListChangedEventArgs e)
         {
-            DateTime daysAgo = DateTime.UtcNow.Subtract(TimeSpan.FromDays(SuperPuTTY.Settings.SaveCommandHistoryDays));
+            DateTime daysAgo = DateTime.UtcNow.Subtract(TimeSpan.FromDays((double)SuperPuTTY.Settings.SaveCommandHistoryDays));
             if (e.ListChangedType == ListChangedType.ItemAdded)
             {
                 // purge duplicates from history
