@@ -1165,8 +1165,7 @@ namespace SuperPutty
                         ctlPuttyPanel panel = doc as ctlPuttyPanel;
                         if (this.sendCommandsDocumentSelector.IsDocumentSelected(panel))
                         {
-                            System.IntPtr tmp = panel.AppPanel.AppWindowHandle;
-                            int handle = tmp.ToInt32();
+                            int handle = panel.AppPanel.AppWindowHandle.ToInt32();
                             //Log.InfoFormat("SendCommand: session={0}, command=[{1}], handle={2}", panel.Session.SessionId, command, handle);
 
                             command.SendToTerminal(handle);
