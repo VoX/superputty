@@ -672,18 +672,15 @@ namespace SuperPutty.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool SessiontreeShowFoldersFirst
-        {
-            get
-            {
+        public bool SessiontreeShowFoldersFirst {
+            get {
                 return ((bool)(this["SessiontreeShowFoldersFirst"]));
             }
-            set
-            {
+            set {
                 this["SessiontreeShowFoldersFirst"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
